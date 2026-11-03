@@ -29,10 +29,16 @@ Cite a source for every claim."""
 
 
 def call_sonar() -> dict:
-    load_dotenv()  # loads .env before the key is read
-    key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+    # override=True: the key in .env wins over any stale OPENROUTER_API_KEY
+    # already exported in the shell.
+    load_dotenv(override=True)
+    key = os.environ.get("OPENROUTER_API_KEY", "").strip().strip('"').strip("'")
     if not key:
         sys.exit("OPENROUTER_API_KEY is empty. Put it in .env after OPENROUTER_API_KEY=")
+    if not key.startswith("sk-or-"):
+        sys.exit(f"OPENROUTER_API_KEY doesn't look like an OpenRouter key "
+                 f"(should start with sk-or-, is {len(key)} chars). Re-copy it from "
+                 "openrouter.ai/settings/keys.")
     resp = requests.post(
         URL,
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
