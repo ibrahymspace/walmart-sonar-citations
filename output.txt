@@ -1,0 +1,41 @@
+=== Answer ===
+Walmart’s last four quarters point to disciplined sales growth, faster operating income growth than sales, continued digital/omnichannel expansion, and investment in higher-return capital areas such as supply chain and automation.[3][5][11][14] Public materials also show a strong push on first-party data, AI, and platform modernization, especially through Walmart Data Ventures, Sparky, associate AI tools, and digital trust governance.[1][2]
+
+## 1) Strategic priorities from the last 4 quarters
+- Q4 FY26: Walmart said it delivered solid sales growth, grew operating income faster than sales, and kept shifting capital toward the highest returns while improving customer and member experience through digital and an integrated omnichannel ecosystem.[5]
+- Q1 FY27: Walmart said it drove strong sales across business segments, made progress on global platforms, and kept a focus on disciplined execution; it also said digital growth remained strong, supported by stores and clubs.[11]
+- Q2 FY27: Walmart emphasized operating with discipline and said underlying operating income growth was at the top end of its 7–10% guidance.[3]
+- 2026 CEO letter: Walmart said revenue grew 5.1% to $715.9 billion and adjusted profit grew faster at 5.4%, reinforcing a priority on profitable growth rather than growth alone.[14]
+
+## 2) Public evidence of a rival data platform in production
+- I did not find public evidence in the gathered sources that Walmart is running Databricks, Google BigQuery, Teradata, or Azure Synapse in production.[1][2][4][7][9][15]
+- What the sources do show is Walmart explicitly keeping its own customer/product data within Walmart rather than sharing it with external AI platforms, which suggests a strong internal-data posture but does not name one of those rival data platforms as being in production.[4]
+
+## 3) Current data and AI initiatives
+- Walmart Data Ventures is evolving Scintilla into a commerce intelligence platform that gives suppliers a more integrated view of their Walmart business and uses AI-powered capabilities to surface opportunities and answer complex questions with Walmart’s first-party data.[1]
+- Walmart says it has AI tools for associates, including My Assistant, developer tools, and AI-generated task lists, and that it uses AI to improve inventory tracking and delivery experiences.[2]
+- Walmart says customer-facing AI includes Sparky for product discovery.[2][9]
+- Walmart’s digital trust program covers responsible use of data, AI, governance, privacy, and cybersecurity, with board oversight through the Audit Committee.[2]
+- Walmart also says it has approved internal AI tools, compliance reviews for higher-impact AI systems, and training programs on cybersecurity and data handling.[2]
+- A public transcript from the ICR conference says Walmart’s fulfillment and distribution centers have “heavily deployed AI and robotics” to move goods and serve customers.[4]
+- A recent report says Walmart is expanding AI and digital twin use in supply chain planning, including agent-based tools for modeling network performance, though this is a third-party report rather than a Walmart filing.[10]
+
+If useful, this can be turned into a 1-page B2B meeting brief with likely pain points, discovery questions, and an account plan.
+
+=== Citations ===
+1. https://corporate.walmart.com/news/2026/09/walmart-data-ventures-commerce-intelligence
+2. https://corporate.walmart.com/purpose/esgreport/digital-trust
+3. https://corporate.walmart.com/news/2026/08/20/walmart-releases-q2-fy27-earnings
+4. https://corporate.walmart.com/content/dam/corporate/documents/newsroom/events/2026-icr-conference/ICR-Conference-2026-Transcript.pdf
+5. https://corporate.walmart.com/news/2026/02/19/walmart-releases-q4-fy26-earnings
+6. https://data.larridin.com/data/ai-tracker/company/walmart/
+7. https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-26-000145/earningspresentationfy27.htm
+8. https://distributionstrategy.com/2026/09/walmart-accelerates-distribution-overhaul-with-automation-ai-and-new-fulfillment-centers/
+9. https://corporate.walmart.com/content/dam/corporate/documents/newsroom/events/2026-morgan-stanley-technology-media-telecom-conference/Walmart_MorganStanley_TMT_Conference_2026_Transcript.pdf
+10. https://www.retaildive.com/news/walmart-supply-chain-strategy-ai-digital-twins/825162/
+11. https://corporate.walmart.com/news/2026/05/21/walmart-releases-q1-fy27-earnings
+12. https://stock.walmart.com/_assets/_461d6b46a29d437b51015f942ff9bb4e/walmart/db/938/9972/earnings_release/Earnings+Release+(FY26+Q4).pdf
+13. https://www.dbbnwa.com/walmart-data-ventures-advances-scintilla-commerce-intelligence-platform/
+14. https://corporate.walmart.com/investors/2026-ceo-letter-to-shareholders?_sp=cc619da6-0b4d-4820-87ee-ddedc75eb1ae
+15. https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/
+Opened and loaded: https://corporate.walmart.com/news/2026/09/walmart-data-ventures-commerce-intelligence, https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-26-000145/earningspresentationfy27.htm
