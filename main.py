@@ -45,9 +45,38 @@ def call_sonar() -> dict:
         json={"model": MODEL, "messages": [{"role": "user", "content": QUESTION}]},
         timeout=120,
     )
+    if resp.status_code == 401:
+        sys.exit(f"Error 401: {resp.text}\n\n" + diagnose_key(key))
     if resp.status_code != 200:
         sys.exit(f"Error {resp.status_code}: {resp.text}")
     return resp.json()
+
+
+NEW_KEY_STEPS = """How to fix it:
+  1. Go to https://openrouter.ai/settings/keys
+  2. Delete the old key, then click Create Key and name it walmart-sonar.
+  3. A box shows the full key ONCE. Click its copy button right away.
+  4. Open .env, replace everything after OPENROUTER_API_KEY= with the copied key
+     (no quotes, no spaces), save, and run: python3 main.py | tee output.txt"""
+
+
+def diagnose_key(key: str) -> str:
+    """Explain a 401 in plain words without ever printing the key."""
+    if any(c in key for c in (".", " ", "\u2026")):
+        return ("Your key contains dots or spaces, so it's the shortened version shown in the\n"
+                "keys list, not the real key. OpenRouter only shows the full key once.\n\n"
+                + NEW_KEY_STEPS)
+    try:
+        check = requests.get("https://openrouter.ai/api/v1/key",
+                             headers={"Authorization": f"Bearer {key}"}, timeout=30)
+    except requests.RequestException as exc:
+        return f"Couldn't reach OpenRouter to check the key: {exc}"
+    if check.status_code == 200:
+        label = (check.json().get("data") or {}).get("label", "?")
+        return (f"OpenRouter accepts this key (label: {label}), yet the chat call was refused.\n"
+                "Send a screenshot of this output so the script can be looked at.")
+    return ("OpenRouter doesn't recognise this key: it was copied incompletely, or it was\n"
+            f"deleted or disabled ({len(key)} characters read from .env).\n\n" + NEW_KEY_STEPS)
 
 
 def citation_urls(payload: dict) -> list[str]:
