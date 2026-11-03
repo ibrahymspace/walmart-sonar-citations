@@ -38,4 +38,5 @@ If useful, this can be turned into a 1-page B2B meeting brief with likely pain p
 13. https://www.dbbnwa.com/walmart-data-ventures-advances-scintilla-commerce-intelligence-platform/
 14. https://corporate.walmart.com/investors/2026-ceo-letter-to-shareholders?_sp=cc619da6-0b4d-4820-87ee-ddedc75eb1ae
 15. https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/
+Source of this output: live run of main.py (python3 main.py, not --sample) against the OpenRouter API, model perplexity/sonar, on 2026-11-03 (PKT). The answer and citation list above are the script's terminal output, copied unchanged; the citations come from the response's citation field.
 Opened and loaded: https://corporate.walmart.com/news/2026/09/walmart-data-ventures-commerce-intelligence, https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-26-000145/earningspresentationfy27.htm
